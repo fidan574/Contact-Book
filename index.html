@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Contact Book</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <title>Contact Book</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <ul class="navigation">
+      <li>
+        <strong><em>Contact Book</em></strong>
+      </li>
+      <li class="active">My Contact List</li>
+      <li>My Profile</li>
+      <li>Log Out</li>
+    </ul>
 
-  <ul class="navigation">
-    <li><strong><em>Contact Book</em></strong></li>
-    <li class="active">My Contact List</li>
-    <li>My Profile</li>
-    <li>Log Out</li>
-  </ul>
+    <div class="search">Search the table</div>
 
-  <div class="search">Search the table</div>
-
-  <!-- Create your table below -->
-
-</body>
+    <!-- Create your table below -->
+    <table>
+      <thead>
+        <tbody><tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Mobile</th>
+          <th scope="col">Address01</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">01</th>
+          <td>Evan Sullivan</td>
+          <td>evan.sullivan@example.com</td>
+          <td>(187)-893-3930</td>
+          <td>2715 Westhemier Rd</td>
+      </tbody>
+        </tr>
+        <tr>
+          <th scope="row">02</th>
+          <td>Ayse Ozturk</td>
+          <td>ay@hotmail.com</td>
+          <td>(444)-565-6150</td>
+          <td>234 beysehir</td>
+        </tr>
+        <tr>
+          <th scope="row">03</th>
+          <td>Ameer Khan</td>
+          <td>ameer@gmail.com</td>
+          <td>(546)-956-5665</td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <th scope="row">04</th>
+          <td>Kartal Tibet</td>
+          <td>kartal@gmail.com</td>
+          <td>(654)-875-3468</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td>kahraman@hotmail.com</td>
+          <td>(457)-548-5669</td>
+          <td>duzluk yolu Kahramanmaras</td>
+        </tr>
+        <tr>
+          <th scope="row" rowspan="2">05</th>
+          <td rowspan="2">Lale Gumussoy</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfoot>      
+        <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <th scope="row" colspan="4" >Total contacts</th>
+        <td>5</td>
+        </tr>
+      </tfoot>
+      
+    </table>
+  </body>
 </html>
